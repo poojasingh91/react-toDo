@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
 }
 
 .App-logo {
@@ -35,4 +42,130 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #46eb75;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.first {
+  display: flex;
+
+}
+
+header p {
+  font-size: 14px;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+.checkbox {
+  margin-right: 10px;
+}
+
+.completed {
+  /* background-color: #f0f0f0; */
+  color: #888;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.placebutton{
+  position: relative;
+  
+}
+
+button {
+  background-color: #00d936;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  /* justify-content: center; -------------------------- */
+
+}
+
+button.add-button {
+  display: block;
+  margin: auto;
+  border-radius: 49%;
+  width: 48px;
+  position: absolute;
+  left: 48%
+}
+
+button:hover {
+  background-color: #00b306;
+}
+.header-column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5px;
+}
+.header-column1 {
+  margin-top: 40px;
+  flex-direction: column;
+}
+.header-column1 p{
+  margin: 0;
+}
+
+.header-column h1 {
+  margin-top: 30px;
+  font-size: 48px;
+}
+
+.month {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+.year {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+.day-of-week {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #fff;
 }
